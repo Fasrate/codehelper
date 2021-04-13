@@ -15,14 +15,14 @@ app.get("/", function (req, res) {
     res.sendFile(__dirname + "/signup.html");
 });
 mailchimp.setConfig({
-    apiKey:  "daeb322df78d7f2aacd49c4de941a8a3-us1",
-    server: "us1"
+    apiKey:  "#",
+    server: "#"
 });
 app.post("/", function (req,res) {
     const firstName = req.body.fname;
     const secondName = req.body.lname;
     const email = req.body.email;
-    const listId = "a1d8c8d550";
+    const listId = "#";
     const subscribingUser = {
         firstName: firstName,
         lastName: secondName,
